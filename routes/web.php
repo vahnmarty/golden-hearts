@@ -22,8 +22,8 @@ use App\Http\Livewire\Collections\ManageCollections;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/login');
+Route::get('/', function(){
+    return view('welcome2');
 });
 
 Route::middleware([
