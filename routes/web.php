@@ -23,7 +23,7 @@ use App\Http\Livewire\Collections\ManageCollections;
 */
 
 Route::get('/', function(){
-    return view('welcome2');
+    return view('landing');
 });
 
 Route::middleware([

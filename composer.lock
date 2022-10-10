@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7efe92fe6faf29f54d1dd38a7282fdfa",
+    "content-hash": "351d93dad167be55b1f13800e43e1aef",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -62,25 +62,25 @@
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
-            "version": "1.3.1",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
-                "reference": "a2749abc7b8eb6149ff643ffa99a3d33a2de7961"
+                "reference": "b1c5f43971554dfe6a80e2b1937a0aba560a51ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/a2749abc7b8eb6149ff643ffa99a3d33a2de7961",
-                "reference": "a2749abc7b8eb6149ff643ffa99a3d33a2de7961",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/b1c5f43971554dfe6a80e2b1937a0aba560a51ca",
+                "reference": "b1c5f43971554dfe6a80e2b1937a0aba560a51ca",
                 "shasum": ""
             },
             "require": {
                 "blade-ui-kit/blade-icons": "^1.1",
-                "illuminate/support": "^8.0|^9.0",
-                "php": "^7.4|^8.0"
+                "illuminate/support": "^9.0",
+                "php": "^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.0|^7.0",
+                "orchestra/testbench": "^7.0",
                 "phpunit/phpunit": "^9.0"
             },
             "type": "library",
@@ -115,7 +115,7 @@
             ],
             "support": {
                 "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
-                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/1.3.1"
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/2.0.4"
             },
             "funding": [
                 {
@@ -127,20 +127,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-02T11:50:13+00:00"
+            "time": "2022-10-06T09:48:47+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
-            "version": "1.3.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blade-ui-kit/blade-icons.git",
-                "reference": "57a7c41e1e79e38aed029d3e6ae690b04344c99e"
+                "reference": "977559507feebba431019abf1b319d71dfdacd95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/57a7c41e1e79e38aed029d3e6ae690b04344c99e",
-                "reference": "57a7c41e1e79e38aed029d3e6ae690b04344c99e",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/977559507feebba431019abf1b319d71dfdacd95",
+                "reference": "977559507feebba431019abf1b319d71dfdacd95",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-11T12:38:11+00:00"
+            "time": "2022-09-30T11:26:24+00:00"
         },
         {
             "name": "blade-ui-kit/blade-ui-kit",
@@ -2333,6 +2333,84 @@
                 }
             ],
             "time": "2022-06-19T02:54:20+00:00"
+        },
+        {
+            "name": "mallardduck/blade-boxicons",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mallardduck/blade-boxicons.git",
+                "reference": "2c9fa72de91fe4ae24c079bcc9a4508618b7a153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mallardduck/blade-boxicons/zipball/2c9fa72de91fe4ae24c079bcc9a4508618b7a153",
+                "reference": "2c9fa72de91fe4ae24c079bcc9a4508618b7a153",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.2.0",
+                "illuminate/support": "^8.74 || ^9.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "replace": {
+                "jfvoliveira/blade-boxicons": "1.1.2"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "orchestra/testbench": "^6.24 || ^7.0",
+                "phpunit/phpunit": "^8.5.14 || ^9.0",
+                "spatie/phpunit-snapshot-assertions": "^4.2",
+                "symfony/console": "^5.3 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MallardDuck\\BladeBoxicons\\BladeBoxiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MallardDuck\\BladeBoxicons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Pock",
+                    "homepage": "https://danpock.me",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "João Oliveira",
+                    "email": "joao@joliveira.pt",
+                    "homepage": "https://joliveira.pt",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "A package to easily make use of Boxicons in your Laravel Blade views.",
+            "homepage": "https://github.com/mallardduck/blade-boxicons",
+            "keywords": [
+                "Blade UI Kit",
+                "Boxicons",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mallardduck/blade-boxicons/issues",
+                "source": "https://github.com/mallardduck/blade-boxicons/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mallardduck",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-08T16:51:30+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
