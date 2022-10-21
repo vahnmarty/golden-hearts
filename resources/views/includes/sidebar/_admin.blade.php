@@ -46,7 +46,7 @@
             <button type="button" class="w-full hover:bg-gray-700" @click="selected !== 1 ? selected = 1 : selected = null">
               <div class="flex items-center justify-between w-full">
                 <x-sidebar-menu-item link="#">
-                  <x-heroicon-s-hand class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-300"/>
+                  <x-heroicon-s-hand-raised class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-300"/>
                   Mortuary
                 </x-sidebar-menu-item>
                 <span>
@@ -60,9 +60,6 @@
               <div class="text-xs pl-9">
                 <x-sidebar-menu-item link="{{ url('admin/mortuary') }}">
                   Dashboard
-                </x-sidebar-menu-item>
-                <x-sidebar-menu-item link="{{ url('admin/mortuary/members') }}">
-                  Members
                 </x-sidebar-menu-item>
                 <x-sidebar-menu-item link="{{ url('admin/mortuary/disbursements') }}">
                   Disbursements

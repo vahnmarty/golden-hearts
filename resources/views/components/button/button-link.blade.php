@@ -6,5 +6,5 @@
 >
     {{ $slot }}
 
-    <x-heroicon-s-external-link class="w-4 h-4" />
+    <x-heroicon-s-link class="w-4 h-4" />
 </a>

@@ -1,5 +1,3 @@
-
-
 @if($size == 'sm')
 <button
     type="button"
@@ -8,7 +6,7 @@
 >
     {{ $slot }}
 </button>
-@elsef($size == 'lg')
+@elseif($size == 'lg')
 <button
     type="button"
     {{ $attributes }}
