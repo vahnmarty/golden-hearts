@@ -8,7 +8,9 @@ use App\Http\Livewire\Members\ManageMembers;
 use App\Http\Controllers\DashboardController;
 use App\Http\Livewire\Members\MemberDashboard;
 use App\Http\Livewire\Members\ReviewApplication;
+use App\Http\Livewire\Mortuary\CreateDisbursement;
 use App\Http\Livewire\Collections\CreateCollection;
+use App\Http\Livewire\Mortuary\ManageDisbursements;
 use App\Http\Livewire\Collections\ManageCollections;
 
 /*
@@ -47,6 +49,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
     Route::group(['prefix' => 'mortuary'], function(){
         Route::get('/collections', ManageCollections::class);
         Route::get('/collections/create', CreateCollection::class);
+
+
+        Route::get('/disbursements', ManageDisbursements::class);
+        Route::get('/disbursements/create', CreateDisbursement::class);
     });
 });
 

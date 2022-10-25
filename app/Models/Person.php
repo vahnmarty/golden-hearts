@@ -48,5 +48,10 @@ class Person extends Model
         return $year . '-' . $seq;
     }
 
+    public function scopeSearchName($query, $keyword){
+        return $query->where('last_name', 'LIKE', '%' . $keyword . '%')
+                        ->orWhere('first_name', 'LIKE', '%' . $keyword . '%');
+    }
+
     
 }
